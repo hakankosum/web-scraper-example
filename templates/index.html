@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="pos-f-t pt-1 pr-1 pl-1">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <div class="table-responsive-md pr-1 pl-1">
+        <table id="asd" class="table table-bordered bg-dark text-white">
+            <thead>
+                <tr>
+                    <th scope="row"></th>
+                    <th scope="col">Altar</th>
+                    <th scope="col">Ares</th>
+                    <th scope="col">Diez</th>
+                    <th scope="col">Destan</th>
+                    <th scope="col">Gordion</th>
+                    <th scope="col">Olympia</th>
+                    <th scope="col">Rosetta</th>
+                    <th scope="col">Sirius</th>
+                    <th scope="col">Vega</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Bynogame</th>
+                    {% for bynogame in bynogame%}
+                    <td>{{bynogame}}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <th scope="row">Oyunfor</th>
+                    {% for oyunfor in oyunfor%}
+                    <td>{{oyunfor}}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <th scope="row">Oyuneks</th>
+                    {% for oyuneks in oyuneks%}
+                    <td>{{oyuneks}}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <th scope="row">Kopazar</th>
+                    {% for kopazar in kopazar%}
+                    <td>{{kopazar}}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="static/maxx.js"></script>
+</body>
+
+</html>
